@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import UserCard from "./Card";
 import InsertUser from "./InsertUser";
 import { useNavigate } from "react-router-dom";
+import React,{lazy,Suspense} from 'react';
 export default function UserPage(props) {
     const [users, setUsers] = useState([]);
     // const apiURL = "https://65ded7efff5e305f32a09deb.mockapi.io/api/users";
